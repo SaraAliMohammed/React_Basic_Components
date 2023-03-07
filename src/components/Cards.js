@@ -1,5 +1,6 @@
 import React from 'react'
 import { Alert } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import CardDetails from './CardDetails/CardDetails';
 
 const Cards = ({data}) => {
@@ -14,6 +15,7 @@ const Cards = ({data}) => {
             No Data Found
           </Alert>)
       }
+      <Link to="/">GO Home</Link>
     </div>
   )
 }
