@@ -18,6 +18,7 @@ import UseRefExample from './components/useRef';
 import UseMemoExample from './components/useMemo';
 import UseReducerEample from './components/useReducer';
 import UseCustomHooks from './components/useCustomHooks';
+import FetchAxios from './components/FetchAxios';
 
 function App() {
   const {dataContext} = useContext(colorContext);
@@ -48,6 +49,7 @@ function App() {
           <Route path="/memo" element={<UseMemoExample />}></Route>
           <Route path="/reducer" element={<UseReducerEample />}></Route>
           <Route path="/data" element={<UseCustomHooks />}></Route>
+          <Route path="/axios" element={<FetchAxios />}></Route>
 
           <Route path="*" element={<ErrorNotFound />}></Route>
         </Routes>
